@@ -3,7 +3,7 @@ from typing import Optional
 import discord
 from discord import app_commands
 from tk import Token, guild_id, channel_id
- 
+
 # Guild = 디스코드의 서버
 # @client.tree.command() 디스코드 슬래시 커맨드에 등록하여 사용할 수 있도록 처리
  
@@ -39,9 +39,6 @@ async def on_ready():
     print(f'Logged in as {client.user} (ID: {client.user.id})')
     print('------')
     await client.change_presence(activity=discord.Streaming(name="치오 테스트 중", url='https://www.twitch.tv/yeeunsy'))
-    # https://www.twitch.tv/yeeunsy  https://www.youtube.com/@yeeunsy
-    # 방송 상태 설정
- 
  
 @client.tree.command()
 async def hello(interaction: discord.Interaction):
