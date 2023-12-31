@@ -8,7 +8,7 @@ from discord import embeds
 
 client = discord.Client(intents=discord.Intents.default())
 
-baseurl = "https://op.gg/summoner/userName="
+baseurl = "https://kr.op.gg/summoner/userName="
 
 @client.event
 async def on_ready():

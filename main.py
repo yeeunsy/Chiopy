@@ -120,7 +120,10 @@ async def report_message(interaction: discord.Interaction, message: discord.Mess
  
     await log_channel.send(embed=embed, view=url_view)
 
-
+# 
+# @client.tree.command()
+# @app_commands.describe
+    
 
 
 
